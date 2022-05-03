@@ -2,4 +2,5 @@ $(function() {
     $.pjax({
         area: 'html'
     });
+
 });

@@ -1,0 +1,232 @@
+h1{
+    position: fixed;
+    color: white;
+    top: 2%;
+    left: 20%;
+    font-size: 5vw;
+
+    .vertical{
+        position: fixed;
+        font-size: 9vw;
+        writing-mode: vertical-rl;
+    }
+
+    .beside{
+        position: fixed;
+        top: 29vw;
+        left: 46%;
+        font-size: 9vw;
+    }
+    z-index: -1;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: black;
+    position: absolute;
+    top: 40vw;
+    overflow: hidden;
+
+    .alert-line{
+        width: 100%;
+        height: 4vw;
+        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 6px, yellow 6px, yellow 12px);
+        border: 2px solid yellow;    
+    }
+    
+    .title{
+        position: absolute;
+        top: 10vh;
+        left: 2%;
+        width: 70%;
+        height: 10%;
+        background-color: yellow;
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+        }
+        .ja{
+            font-size: 160%;
+        }
+        .en{
+            font-size: 120%;
+        }
+    }
+
+    .intro{
+        position: absolute;
+        top: 22vh;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        .name{
+            position: relative;
+            height: 9vh;
+            width: 35%;
+            background-color: yellow;
+            clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
+
+            .name-inside{
+                position: absolute;
+                height: 95%;
+                width: 98%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: black;
+                clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
+                color: yellow;
+                text-align: center;
+
+                h2{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    white-space: nowrap;
+                }
+
+                .ja{
+                    top: 10%;
+                    font-size: 120%;
+                }
+                .en{
+                    top: 60%;
+                    font-size: 60%;
+                }
+            }
+
+        }
+
+        
+        .line{
+            position: absolute;
+            width: 71%;
+            height: 2px;
+            top: 50%;
+            right: -5.5%;
+            transform: translateY(-50%);
+            background-color: yellow;
+            z-index: 5;
+        }
+
+        .name-container{
+            position: absolute;
+            top: 180%;
+            width: 100%;
+            height: 50vh;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            color: yellow;
+            text-align: center;
+
+            .explanation{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                letter-spacing: 1px;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 7%;
+                    background-color: yellow;
+                    top: -25%;
+                    left: 0;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 7%;
+                    background-color: yellow;
+                    bottom: -25%;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.cannotsee{
+    display: none;
+}
+
+.index{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    height: 11%;
+    width: 15%;
+    background-color: yellow;
+    clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+    z-index: 10;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .index-inside{
+        position: absolute;
+        height: 95%;
+        width: 97%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+        color: yellow;
+
+
+        .ja{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 11;
+            font-size: 120%;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .en{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 11;
+            font-size: 80%;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+    }
+
+    &:hover{
+        background-color: black;
+        .index-inside{
+            background-color: yellow;
+            color: black;
+        }
+    }
+}
+
+//loadについてのもの
+.loader2{
+    .title{
+        background-color: yellow !important;
+    }
+}

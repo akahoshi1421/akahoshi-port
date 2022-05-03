@@ -22,6 +22,9 @@ $(document).on("click", ".btn", function(){
         let classlist = classes.split(" ");
         for(let thisclass of classlist){
             switch(thisclass){
+                case "index":
+                    $("a[href='index.html']")[0].click();
+                    break;
                 case "about":
                     $("a[href='about.html']")[0].click();
                     break;
