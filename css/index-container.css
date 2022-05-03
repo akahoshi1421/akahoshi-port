@@ -281,6 +281,29 @@
   cursor: pointer;
 }
 
+.fadeIn {
+  -webkit-animation: fade forwards 2s;
+          animation: fade forwards 2s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .info2 {
     height: 20% !important;

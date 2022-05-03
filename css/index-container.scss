@@ -262,6 +262,20 @@
     cursor: pointer;
 }
 
+//このページ自体のロード
+.fadeIn{
+    animation: fade forwards 2s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .info2{
         height: 20% !important;

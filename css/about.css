@@ -240,6 +240,29 @@ h1 .beside {
   color: black;
 }
 
+.fadeIn {
+  -webkit-animation: fade forwards 2s;
+          animation: fade forwards 2s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .loader2 .title {
   background-color: yellow !important;
 }

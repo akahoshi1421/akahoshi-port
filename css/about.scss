@@ -223,6 +223,20 @@ h1{
         }
     }
 }
+//このページ自体のロード
+.fadeIn{
+    animation: fade forwards 2s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 //loadについてのもの
 .loader2{
