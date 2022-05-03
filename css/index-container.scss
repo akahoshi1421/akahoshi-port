@@ -1,0 +1,277 @@
+*{
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: url("../img/port.svg") no-repeat;
+    background-position: 2px;
+
+    a{
+        text-decoration: none;
+    }
+
+    .title{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55%;
+        height: 40%;
+        background-color: red;
+        clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+
+
+        .title-inside{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 98%;
+            height: 97%;
+            background-color: black;
+            clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+            color: red;
+            text-align: center;
+
+            h1{
+                position: absolute;
+                left: 50%;
+                top: 15%;
+                transform: translateX(-50%);
+                font-size: 200%;
+                letter-spacing: -2px;
+            }
+
+            h2{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                font-size: 1.5rem;
+                letter-spacing: -1px;
+                font-weight: 100;
+            }
+
+            .alert-line{
+                position: absolute;
+                top: 80%;
+                left: 0;
+                height: 20%;
+                width: 100%;
+                border: solid red 4px;
+                transition: all 0.6s ease;
+                background: repeating-linear-gradient(-45deg , transparent 0px, transparent 8px, red 8px, red 16px);
+            }
+        }
+
+        &:hover{
+            background-color: black;
+            
+            .title-inside{
+                background-color: red;
+                color: black;
+                .alert-line{
+                    border: solid black 4px;
+                    background: repeating-linear-gradient(-45deg , black 0px, black 8px, red 8px, red 16px);
+                    transform: translateX(-10px);
+                }
+            }
+        }
+    }
+
+    .info{
+        position: absolute;
+        width: 30vw;
+        height: 31vw;
+        max-width: 300px;
+        max-height: 300px;
+        background-color: red;
+        top: 26%;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    
+        .info-inside{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 96%;
+            height: 97%;
+            background-color: black;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            color: red;
+
+            .ja{
+                position: absolute;
+                left: 50%;
+                top: 25%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                font-size: 2.2rem;
+                letter-spacing: -1px;
+                font-weight: 100;
+            }
+            .en{
+                position: absolute;
+                left: 50%;
+                top: 55%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                font-size: 1.2rem;
+                letter-spacing: -1px;
+                font-weight: 100;
+            }
+
+            &::before, &::after{
+                content: "";
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 5px;
+                width: 40%;
+                background-color: red;
+            }
+
+            &::after{
+                top: 75%;
+            }
+        }
+
+        &:hover{
+            background-color: black;
+            
+            .info-inside{
+                background-color: red;
+                color: black;
+                
+                &::before, &::after{
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+    .about{
+        left: -3%;
+    }
+
+    .contact{
+        right: -3%;
+    }
+
+
+    .info2{
+        position: absolute;
+        top: 48%;
+
+        width: 24%;
+        height: 35%;
+        background-color: red;
+        
+        .info2-inside{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 96%;
+            height: 96%;
+            background-color: black;
+            color: red;
+            
+            .ja{
+                position: absolute;
+                
+                top: 25%;
+                
+                white-space: nowrap;
+                font-size: 2.2rem;
+                letter-spacing: -1px;
+                font-weight: 100;
+            }
+            .en{
+                position: absolute;
+
+                top: 55%;
+
+                white-space: nowrap;
+                font-size: 1.2rem;
+                letter-spacing: -1px;
+                font-weight: 100;
+            }
+        }
+
+        &:hover{
+            background-color: black;
+            
+            .info2-inside{
+                background-color: red;
+                color: black;
+            }
+        }
+    }
+
+    .works{
+        left: 25%;
+        clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
+
+        .info2-inside{
+            clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
+        
+            .ja{
+                left: 50%;
+                transform: translateX(-30%);
+            }
+
+            .en{
+                left: 50%;
+                transform: translateX(-20%);
+            }
+        }
+    }
+
+    .skills{
+        right: 25%;
+        clip-path: polygon(0% 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+
+        .info2-inside{
+            clip-path: polygon(0% 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+        
+            .ja{
+                left: 50%;
+                transform: translateX(-60%);
+            }
+            .en{
+                left: 50%;
+                transform: translateX(-60%);
+            }
+        }
+    }
+}
+
+.cannotsee{
+    display: none;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .info2{
+        height: 20% !important;
+
+        .ja{
+            font-size: 1.5rem !important;
+        }
+
+        .en{
+            font-size: 1rem !important;
+        }
+    }
+}

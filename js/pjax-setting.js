@@ -1,0 +1,5 @@
+$(function() {
+    $.pjax({
+        area: 'html'
+    });
+});

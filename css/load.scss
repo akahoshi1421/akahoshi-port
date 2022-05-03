@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "HG明朝E";
+}
+
+body{
+    background-color: black;
+}
+
+.loader2{
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+
+    .loader-mask{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        right: -100%;
+        background-color: black;
+
+        &.loading{
+            animation: bgmove 1.5s ease forwards;
+        }
+    }
+
+    .line{
+        position: fixed;
+        @for $i from 0 to 30 {
+            &:nth-child(#{$i}){
+                right: calc(#{$i}px * 60 - 160px);
+            }
+        }
+
+        &:nth-child(odd){
+            top: -40px;
+        }
+    }
+    .title{
+        position: relative;
+
+        @for $i from 0 to 10 {
+            &:nth-of-type(#{$i}){
+                top: calc(#{$i}px * 8);
+            }
+        }
+        height: 70px;
+        width: 70px;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        background-color: red;
+        text-align: center;
+
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 110%;
+            letter-spacing: -1px;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 10px;
+            width: 10px;
+            background-color: black;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 10px;
+            width: 10px;
+            background-color: black;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+        }
+    }
+}
+
+@keyframes bgmove {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+/*
+@media screen and (max-width: 600px) {
+    .container{
+        transform: scale(10);
+    }
+}
+*/
