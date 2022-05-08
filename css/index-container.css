@@ -23,6 +23,7 @@
           transform: translateX(-50%);
   width: 55%;
   height: 40%;
+  min-height: 300px;
   background-color: red;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
@@ -49,14 +50,14 @@
   top: 15%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-size: 200%;
+  font-size: 400%;
   letter-spacing: -2px;
 }
 
 .container .title .title-inside h2 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   white-space: nowrap;
@@ -180,9 +181,10 @@
 
 .container .info2 {
   position: absolute;
-  top: 48%;
+  top: 48vh;
   width: 24%;
   height: 35%;
+  min-height: 180px;
   background-color: red;
 }
 
@@ -304,13 +306,57 @@
 
 @media screen and (max-width: 500px) {
   .info2 {
-    height: 20% !important;
+    height: 25% !important;
   }
   .info2 .ja {
     font-size: 1.5rem !important;
   }
   .info2 .en {
     font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  h1 {
+    font-size: 300% !important;
+  }
+}
+
+@media screen and (max-width: 770pt) {
+  .info2 {
+    width: 45% !important;
+  }
+  .info2.works {
+    left: 2% !important;
+  }
+  .info2.skills {
+    right: 2% !important;
+  }
+  .info .ja {
+    font-size: 3rem !important;
+  }
+  .info .en {
+    font-size: 2rem !important;
+  }
+  .info2 .ja {
+    font-size: 5rem !important;
+    top: 20% !important;
+  }
+  .info2 .en {
+    font-size: 3rem !important;
+    top: 60% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 200% !important;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .info2 {
+    top: max(65vh, 350px)  !important;
   }
 }
 /*# sourceMappingURL=index-container.css.map */
