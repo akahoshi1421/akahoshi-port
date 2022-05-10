@@ -1,0 +1,273 @@
+$myblue: rgb(119, 119, 252);
+
+h1{
+    position: fixed;
+    color: white;
+    top: 2%;
+    left: 20%;
+    font-size: 5vw;
+    min-height: 970px;
+    z-index: -1;
+
+    span{
+        display: block;
+        &.chapter{
+            text-align: center;
+        }
+        &.title{
+            font-size: 9vw;
+        }
+    }
+}
+
+
+.main{
+    width: 100%;
+    height: 140vw;
+    z-index: 1;
+    background-color: black;
+    position: absolute;
+    top: unquote("max(40vw, 30vh)");
+    overflow: hidden;
+    
+
+    .alert-line{
+        width: 100%;
+        height: 4vw;
+        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 6px, $myblue 6px, $myblue 12px);
+        border: 2px solid $myblue;    
+    }
+    
+    .title{
+        position: absolute;
+        top: 10vw;
+        left: 2%;
+        width: 70%;
+        height: 10%;
+        background-color: $myblue;
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+        }
+        .ja{
+            font-size: unquote("min(5vw, 60px)");
+        }
+        .en{
+            font-size: unquote("min(3vw, 30px)");
+        }
+    }
+
+    .intro{
+        width: 95vw;
+        height: 95vw;
+        position: absolute;
+        top: 35vw;
+
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background-color: $myblue;
+            z-index: 3;
+        }
+        
+
+        .github{
+            transition: all 0.3s ease;
+            width: 50%;
+            height: 45%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+            background-color: $myblue;
+            z-index: 4;
+            cursor: pointer;
+            .inside{
+                clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+            }
+
+            &:hover{
+                background-color: black;
+                .inside{
+                    background-color: $myblue;
+                    color: black;
+                }
+            }
+        }
+
+        .qiita{
+            transition: all 0.3s ease;
+            width: 45%;
+            height: 45%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+            background-color: $myblue;
+            z-index: 4;
+            cursor: pointer;
+            .inside{
+                clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+            }
+
+            &:hover{
+                background-color: black;
+                .inside{
+                    background-color: $myblue;
+                    color: black;
+                }
+            }
+        }
+
+        .email{
+            transition: all 0.3s ease;
+            width: 45%;
+            height: 45%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+            background-color: $myblue;
+            z-index: 4;
+            cursor: pointer;
+            .inside{
+                clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+            }
+
+            &:hover{
+                background-color: black;
+                .inside{
+                    background-color: $myblue;
+                    color: black;
+                }
+            }
+        }
+
+        //共通
+        .inside{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            height: 95%;
+            background-color: black;
+            z-index: 5;
+            color: $myblue;
+
+            span{
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: unquote("min(8vw, 160px)");
+                transition: all 0.3s ease;
+                &.mymail{
+                    font-size: unquote("min(4vw, 30px)");
+                    opacity: 0;
+                }
+                &.emailUp{
+                    transform: translate(-50%, -120%);
+                }
+                &.emailDown{
+                    transform: translate(-50%, 120%);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.cannotsee{
+    display: none;
+}
+
+.index{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    height: 11%;
+    min-height: 100px;
+    width: 15%;
+    background-color: $myblue;
+    clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+    z-index: 10;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .index-inside{
+        position: absolute;
+        height: 95%;
+        width: 97%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+        color: $myblue;
+
+
+        .ja{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 11;
+            font-size: unquote("min(4vw, 40px)");
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .en{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 11;
+            font-size: unquote("min(2vw, 20px)");
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+    }
+
+    &:hover{
+        background-color: black;
+        .index-inside{
+            background-color: $myblue;
+            color: black;
+        }
+    }
+}
+//このページ自体のロード
+.fadeIn{
+    animation: fade forwards 2s;
+}
+
+//loadについてのもの
+.loader2{
+    .title{
+        background-color: $myblue !important;
+    }
+}

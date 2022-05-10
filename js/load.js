@@ -20,32 +20,13 @@ let loading = function(){
 
 
 $(document).on("click", ".btn", function(){
-    let classes =  $(this).attr("class");
+    let to =  $(this).attr("to");
 
     let loadiv = setInterval(loading, 50);
     $(".loader-mask").addClass("loading");
 
     setTimeout(function(){
         clearInterval(loadiv);
-        let classlist = classes.split(" ");
-        for(let thisclass of classlist){
-            switch(thisclass){
-                case "index":
-                    $("a[href='index.html']")[0].click();
-                    break;
-                case "about":
-                    $("a[href='about.html']")[0].click();
-                    break;
-                case "contact":
-                    $("a[href='contact.html']")[0].click();
-                    break;
-                case "works":
-                    $("a[href='works.html']")[0].click();
-                    break;
-                case "skills":
-                    $("a[href='skills.html']")[0].click();
-                    break;
-            }
-        }
+        $(`a[href='${to}.html']`)[0].click();
     }, 1200);
 });

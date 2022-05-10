@@ -1,0 +1,302 @@
+h1 {
+  position: fixed;
+  color: white;
+  top: 2%;
+  left: 20%;
+  font-size: 5vw;
+  min-height: 970px;
+  z-index: -1;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 span.chapter {
+  text-align: center;
+}
+
+h1 span.title {
+  font-size: 9vw;
+}
+
+.main {
+  width: 100%;
+  height: 140vw;
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  top: max(40vw, 30vh);
+  overflow: hidden;
+}
+
+.main .alert-line {
+  width: 100%;
+  height: 4vw;
+  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #7777fc 6px, #7777fc 12px);
+  border: 2px solid #7777fc;
+}
+
+.main .title {
+  position: absolute;
+  top: 10vw;
+  left: 2%;
+  width: 70%;
+  height: 10%;
+  background-color: #7777fc;
+}
+
+.main .title::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+.main .title .ja {
+  font-size: min(5vw, 60px);
+}
+
+.main .title .en {
+  font-size: min(3vw, 30px);
+}
+
+.main .intro {
+  width: 95vw;
+  height: 95vw;
+  position: absolute;
+  top: 35vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.main .intro::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #7777fc;
+  z-index: 3;
+}
+
+.main .intro .github {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 50%;
+  height: 45%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+          clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+  background-color: #7777fc;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.main .intro .github .inside {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+          clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+}
+
+.main .intro .github:hover {
+  background-color: black;
+}
+
+.main .intro .github:hover .inside {
+  background-color: #7777fc;
+  color: black;
+}
+
+.main .intro .qiita {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+  background-color: #7777fc;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.main .intro .qiita .inside {
+  -webkit-clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+}
+
+.main .intro .qiita:hover {
+  background-color: black;
+}
+
+.main .intro .qiita:hover .inside {
+  background-color: #7777fc;
+  color: black;
+}
+
+.main .intro .email {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+  background-color: #7777fc;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.main .intro .email .inside {
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+}
+
+.main .intro .email:hover {
+  background-color: black;
+}
+
+.main .intro .email:hover .inside {
+  background-color: #7777fc;
+  color: black;
+}
+
+.main .intro .inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background-color: black;
+  z-index: 5;
+  color: #7777fc;
+}
+
+.main .intro .inside span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: min(8vw, 160px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main .intro .inside span.mymail {
+  font-size: min(4vw, 30px);
+  opacity: 0;
+}
+
+.main .intro .inside span.emailUp {
+  -webkit-transform: translate(-50%, -120%);
+          transform: translate(-50%, -120%);
+}
+
+.main .intro .inside span.emailDown {
+  -webkit-transform: translate(-50%, 120%);
+          transform: translate(-50%, 120%);
+  opacity: 1;
+}
+
+.cannotsee {
+  display: none;
+}
+
+.index {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  height: 11%;
+  min-height: 100px;
+  width: 15%;
+  background-color: #7777fc;
+  -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+          clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.index .index-inside {
+  position: absolute;
+  height: 95%;
+  width: 97%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: black;
+  -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+          clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+  color: #7777fc;
+}
+
+.index .index-inside .ja {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 11;
+  font-size: min(4vw, 40px);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.index .index-inside .en {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 11;
+  font-size: min(2vw, 20px);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.index:hover {
+  background-color: black;
+}
+
+.index:hover .index-inside {
+  background-color: #7777fc;
+  color: black;
+}
+
+.fadeIn {
+  -webkit-animation: fade forwards 2s;
+          animation: fade forwards 2s;
+}
+
+.loader2 .title {
+  background-color: #7777fc !important;
+}
+/*# sourceMappingURL=contact.css.map */
