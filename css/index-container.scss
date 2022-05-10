@@ -90,8 +90,8 @@
         position: absolute;
         width: 30vw;
         height: 31vw;
-        //max-width: 300px;
-        //max-height: 300px;
+        max-width: 400px;
+        max-height: 400px;
         background-color: red;
         top: 26%;
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -333,6 +333,13 @@
         }
     }
 
+}
+
+@media screen and (max-width: 770pt) and (max-height: 850px){
+    .info2{
+        bottom: 2% !important;
+        top: auto !important;
+    }
 }
 
 
