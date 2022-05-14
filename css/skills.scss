@@ -1,0 +1,65 @@
+$mygreen: rgb(91, 249, 91);
+
+h1{
+    position: fixed;
+    color: white;
+    top: 2%;
+    left: 20%;
+    font-size: 5vw;
+    min-height: 970px;
+
+    .vertical{
+        position: fixed;
+        right: 10%;
+        font-size: 8vw;
+        writing-mode: vertical-rl;
+    }
+
+    .title-start{
+        position: fixed;
+        font-size: 8vw;
+        right: calc(8% + 10vw);
+    }
+
+    .chapter{
+        position: fixed;
+        top: 20vw;
+    }
+    z-index: -1;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-color: black;
+    margin-top: unquote("max(38vw, 30vh)");
+    overflow: hidden;
+    position: relative;
+
+    .alert-line{
+        width: 100%;
+        height: 4vw;
+        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 6px, $mygreen 6px, $mygreen 12px);
+        border: 2px solid $mygreen;    
+    }
+    
+   .skills-container{
+
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+        width: 100%;
+
+        .myskill{
+            margin-top: 5vw;
+            width: 95vw;
+            height: 95vw;
+            position: relative;
+            
+            .skill-mark{
+                
+            }
+        }
+   }
+}
