@@ -224,9 +224,10 @@ h1 .chapter {
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   background-color: black;
+  text-align: center;
 }
 
-.main .skills-container .myskill .discription-container .myskill-discript-mask p {
+.main .skills-container .myskill .discription-container .myskill-discript-mask .title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -234,6 +235,15 @@ h1 .chapter {
           transform: translate(-50%, -50%);
   color: #5bf95b;
   font-size: 7.5vw;
+}
+
+.main .skills-container .myskill .discription-container .myskill-discript-mask .discript {
+  position: absolute;
+  color: #5bf95b;
+  font-size: 5vw;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  display: none;
 }
 
 .main .skills-container .myskill .discription-container .myskill-discript:hover {
@@ -248,10 +258,48 @@ h1 .chapter {
   color: black;
 }
 
+.main .skills-container .myskill .discription-container .myskill-discript.big {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  width: 85%;
+  height: 85%;
+  z-index: 2;
+}
+
+.main .skills-container .myskill .discription-container .myskill-discript.big .title {
+  top: 10%;
+}
+
+.main .skills-container .myskill .discription-container .myskill-discript.big .discript {
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 85%;
+}
+
 .main .skills-container .myskill .discription-container .tpskill {
   top: 15.6%;
   -webkit-transform: translateY(-15.6%);
           transform: translateY(-15.6%);
+}
+
+.main .skills-container .myskill .discription-container .tpskill.prev {
+  opacity: 0;
+  -webkit-animation: upanime1 0.3s ease forwards;
+          animation: upanime1 0.3s ease forwards;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.main .skills-container .myskill .discription-container .tpskill.next {
+  opacity: 0;
+  -webkit-animation: downanime1 0.3s ease forwards;
+          animation: downanime1 0.3s ease forwards;
 }
 
 .main .skills-container .myskill .discription-container .midskill {
@@ -260,10 +308,196 @@ h1 .chapter {
           transform: translateY(-50%);
 }
 
+.main .skills-container .myskill .discription-container .midskill.prev {
+  opacity: 0;
+  -webkit-animation: upanime2 0.3s ease forwards;
+          animation: upanime2 0.3s ease forwards;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+.main .skills-container .myskill .discription-container .midskill.next {
+  opacity: 0;
+  -webkit-animation: downanime2 0.3s ease forwards;
+          animation: downanime2 0.3s ease forwards;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
 .main .skills-container .myskill .discription-container .btmskill {
   bottom: 15.6%;
   -webkit-transform: translateY(15.6%);
           transform: translateY(15.6%);
+}
+
+.main .skills-container .myskill .discription-container .btmskill.prev {
+  opacity: 0;
+  -webkit-animation: upanime3 0.3s ease forwards;
+          animation: upanime3 0.3s ease forwards;
+}
+
+.main .skills-container .myskill .discription-container .btmskill.next {
+  opacity: 0;
+  -webkit-animation: downanime3 0.3s ease forwards;
+          animation: downanime3 0.3s ease forwards;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+@-webkit-keyframes upanime1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-31.2%);
+            transform: translateY(-31.2%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-15.6%);
+            transform: translateY(-15.6%);
+  }
+}
+
+@keyframes upanime1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-31.2%);
+            transform: translateY(-31.2%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-15.6%);
+            transform: translateY(-15.6%);
+  }
+}
+
+@-webkit-keyframes upanime2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-65.6%);
+            transform: translateY(-65.6%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes upanime2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-65.6%);
+            transform: translateY(-65.6%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes upanime3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(15.6%);
+            transform: translateY(15.6%);
+  }
+}
+
+@keyframes upanime3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(15.6%);
+            transform: translateY(15.6%);
+  }
+}
+
+@-webkit-keyframes downanime1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-15.6%);
+            transform: translateY(-15.6%);
+  }
+}
+
+@keyframes downanime1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-15.6%);
+            transform: translateY(-15.6%);
+  }
+}
+
+@-webkit-keyframes downanime2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-34.4%);
+            transform: translateY(-34.4%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes downanime2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-34.4%);
+            transform: translateY(-34.4%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes downanime3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(31.2%);
+            transform: translateY(31.2%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(15.6%);
+            transform: translateY(15.6%);
+  }
+}
+
+@keyframes downanime3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(31.2%);
+            transform: translateY(31.2%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(15.6%);
+            transform: translateY(15.6%);
+  }
 }
 
 .cannotsee {

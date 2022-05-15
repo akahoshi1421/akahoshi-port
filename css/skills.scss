@@ -199,14 +199,24 @@ h1{
                         transform: translate(-50%, -50%);
                         clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
                         background-color: black;
+                        text-align: center;
 
-                        p{
+                        .title{
                             position: absolute;
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
                             color: $mygreen;
                             font-size: 7.5vw;
+                        }
+
+                        .discript{
+                            position: absolute;
+                            color: $mygreen;
+                            font-size: 5vw;
+                            overflow-wrap: break-word;
+                            word-break: keep-all;
+                            display: none;
                         }
                     }
 
@@ -219,23 +229,148 @@ h1{
                             }
                         }
                     }
+
+                    &.big{
+                        position: absolute;
+                        top: 50% !important;
+                        left: 50% !important;
+                        transform: translate(-50%, -50%) !important;
+                        width: 85%;
+                        height: 85%;
+                        z-index: 2;
+
+                        .title{
+                            top: 10%;
+                        }
+
+                        .discript{
+                            display: block;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 85%;
+                        }
+                    }
                 }
                 .tpskill{
                     top: 15.6%;
                     transform: translateY(-15.6%);
+
+                    &.prev{
+                        opacity: 0;
+                        animation: upanime1 0.3s ease forwards;
+                        animation-delay: 0.1s;
+                    }
+    
+                    &.next{
+                        opacity: 0;
+                        animation: downanime1 0.3s ease forwards;
+                    }
                 }
                 .midskill{
                     top: 50%;
                     transform: translateY(-50%);
+                    
+
+                    &.prev{
+                        opacity: 0;
+                        animation: upanime2 0.3s ease forwards;
+                        animation-delay: 0.05s;
+                    }
+    
+                    &.next{
+                        opacity: 0;
+                        animation: downanime2 0.3s ease forwards;
+                        animation-delay: 0.05s;
+                    }
                 }
                 .btmskill{
                     bottom: 15.6%;
                     transform: translateY(15.6%);
+                    
+
+                    &.prev{
+                        opacity: 0;
+                        animation: upanime3 0.3s ease forwards;
+                    }
+    
+                    &.next{
+                        opacity: 0;
+                        animation: downanime3 0.3s ease forwards;
+                        animation-delay: 0.1s;
+                    }
                 }
+
 
             }
         }
    }
+}
+
+@keyframes upanime1 {
+    0%{
+        opacity: 0;
+        transform: translateY(-31.2%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-15.6%);
+    }
+}
+
+@keyframes upanime2 {
+    0%{
+        opacity: 0;
+        transform: translateY(-65.6%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes upanime3 {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(15.6%);
+    }
+}
+
+@keyframes downanime1 {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-15.6%);
+    }
+}
+
+@keyframes downanime2 {
+    0%{
+        opacity: 0;
+        transform: translateY(-34.4%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes downanime3 {
+    0%{
+        opacity: 0;
+        transform: translateY(31.2%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(15.6%);
+    }
 }
 
 .cannotsee{
