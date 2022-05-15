@@ -17,9 +17,10 @@ body{
         position: fixed;
         height: 100vh;
         width: 100vw;
+        top: 0;
         right: -100%;
         background-color: black;
-
+        opacity: 0;
         &.loading{
             animation: bgmove 1.5s ease forwards;
         }
@@ -33,6 +34,7 @@ body{
             }
         }
 
+        top: 0;
         &:nth-child(odd){
             top: -40px;
         }
@@ -88,9 +90,11 @@ body{
 @keyframes bgmove {
     0%{
         right: -100%;
+        opacity: 1;
     }
     100%{
         right: 0;
+        opacity: 1;
     }
 }
 /*

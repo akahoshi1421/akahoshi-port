@@ -10,20 +10,20 @@ h1{
 
     .vertical{
         position: fixed;
-        right: 10%;
-        font-size: 8vw;
+        right: 25%;
+        font-size: 7vw;
         writing-mode: vertical-rl;
     }
 
     .title-start{
         position: fixed;
-        font-size: 8vw;
-        right: calc(8% + 10vw);
+        font-size: 7vw;
+        right: calc(25% + 7vw);
     }
 
     .chapter{
         position: fixed;
-        top: 20vw;
+        top: 18vw;
     }
     z-index: -1;
 }
@@ -127,20 +127,186 @@ h1{
                 }
             }
 
+            .prevnext{
+                position: absolute;
+                left: 5%;
+                height: 10%;
+                width: 20%;
+                clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+                background-color: $mygreen;
+                cursor: pointer;
+            }
+
+            .skill-prev,.skill-next{
+                position: absolute;
+                transition: all 0.6s ease;
+                &-mask{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 98%;
+                    width: 98.5%;
+                    background-color: black;
+                    clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+                
+                    p{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: $mygreen;
+                        font-size: 4.5vw;
+                    }
+                }
+
+                &:hover{
+                    background-color: black;
+                    transform: scale(1.2);
+                    .skill-prev-mask,.skill-next-mask{
+                        background-color: $mygreen;
+                        p{
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            .skill-prev{
+                top: 15%;
+            }
+            .skill-next{
+                bottom: 15%;
+            }
+
             .discription-container{
                 .myskill-discript{
                     position: absolute;
                     background-color: $mygreen;
                     clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-                    height: 15%;
-                    width: 50%;
+                    height: 22%;
+                    width: 59%;
+                    left: 41%;
+                    cursor: pointer;
+                    transition: all 0.6s;
+
+                    &-mask{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 99%;
+                        height: 98%;
+                        transform: translate(-50%, -50%);
+                        clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+                        background-color: black;
+
+                        p{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: $mygreen;
+                            font-size: 7.5vw;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: black;
+                        .myskill-discript-mask{
+                            background-color: $mygreen;
+                            p{
+                                color: black;
+                            }
+                        }
+                    }
                 }
                 .tpskill{
-                    top: 18.5%;
-                    left: 41%;
-                    transform: translateY(-18.5%);
+                    top: 15.6%;
+                    transform: translateY(-15.6%);
                 }
+                .midskill{
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .btmskill{
+                    bottom: 15.6%;
+                    transform: translateY(15.6%);
+                }
+
             }
         }
    }
+}
+
+.cannotsee{
+    display: none;
+}
+
+.index{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    height: 11%;
+    min-height: 100px;
+    width: 15%;
+    background-color: $mygreen;
+    clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+    z-index: 10;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .index-inside{
+        position: absolute;
+        height: 95%;
+        width: 97%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+        color: $mygreen;
+
+
+        .ja{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 11;
+            font-size: unquote("min(4vw, 40px)");
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .en{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 11;
+            font-size: unquote("min(2vw, 20px)");
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+    }
+
+    &:hover{
+        background-color: black;
+        .index-inside{
+            background-color: $mygreen;
+            color: black;
+        }
+    }
+}
+//このページ自体のロード
+.fadeIn{
+    animation: fade forwards 2s;
+}
+
+//loadについてのもの
+.loader2{
+    .title{
+        background-color: $mygreen !important;
+    }
 }
