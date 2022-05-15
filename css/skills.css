@@ -62,4 +62,95 @@ h1 .chapter {
   height: 95vw;
   position: relative;
 }
+
+.main .skills-container .myskill .skill-mark {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  height: 40%;
+  width: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #5bf95b;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.main .skills-container .myskill .skill-mark p {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translate(-4%, -50%) rotate(90deg);
+          transform: translate(-4%, -50%) rotate(90deg);
+  color: black;
+  font-size: 8vw;
+  letter-spacing: 0.2vw;
+}
+
+.main .skills-container .myskill .skilltp-line {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  height: 0.3%;
+  width: 20%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #5bf95b;
+}
+
+.main .skills-container .myskill .skilltp-line2 {
+  position: absolute;
+  top: 23%;
+  left: 27%;
+  height: 0.3%;
+  width: 15%;
+  background-color: #5bf95b;
+}
+
+.main .skills-container .myskill .skillmid-line {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  height: 0.3%;
+  width: 27%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #5bf95b;
+}
+
+.main .skills-container .myskill .skillbtm-line {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  height: 0.3%;
+  width: 20%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #5bf95b;
+}
+
+.main .skills-container .myskill .skillbtm-line2 {
+  position: absolute;
+  bottom: 23%;
+  left: 27%;
+  height: 0.3%;
+  width: 15%;
+  background-color: #5bf95b;
+}
+
+.main .skills-container .myskill .discription-container .myskill-discript {
+  position: absolute;
+  background-color: #5bf95b;
+  -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+          clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
+  height: 15%;
+  width: 50%;
+}
+
+.main .skills-container .myskill .discription-container .tpskill {
+  top: 18.5%;
+  left: 41%;
+  -webkit-transform: translateY(-18.5%);
+          transform: translateY(-18.5%);
+}
 /*# sourceMappingURL=skills.css.map */
