@@ -8,8 +8,15 @@ h1 {
   z-index: -1;
 }
 
+h1 .chapter {
+  position: fixed;
+  top: 2.5vw;
+}
+
 h1 .vertical {
   position: fixed;
+  right: calc(46% + 9vw);
+  top: 2vw;
   font-size: 9vw;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;

@@ -6,8 +6,15 @@ h1{
     font-size: 5vw;
     min-height: 980px;
 
+    .chapter{
+        position: fixed;
+        top: 2.5vw;
+    }
+
     .vertical{
         position: fixed;
+        right: calc(46% + 9vw);
+        top: 2vw;
         font-size: 9vw;
         writing-mode: vertical-rl;
     }
