@@ -27,8 +27,6 @@ $(document).on("click", ".btn", function(){
 
     setTimeout(function(){
         clearInterval(loadiv);
-        $(".loader-mask").removeClass("loading");
-        $(".line").remove();
         $(`a[href='${to}.html']`)[0].click();
     }, 1200);
 });
