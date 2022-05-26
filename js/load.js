@@ -30,3 +30,9 @@ $(document).on("click", ".btn", function(){
         $(`a[href='${to}.html']`)[0].click();
     }, 1200);
 });
+
+
+$(function(){
+    $(".loader-mask").removeClass("loading");
+    $(".line").remove();
+});
