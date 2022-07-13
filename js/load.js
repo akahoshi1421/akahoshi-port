@@ -25,10 +25,14 @@ $(document).on("click", ".btn", function(){
     let loadiv = setInterval(loading, 50);
     $(".loader-mask").addClass("loading");
 
+    let default_time = 900;
+    let plus_time = 300 * Math.floor(document.body.clientWidth / 600);
+    default_time += plus_time;
+
     setTimeout(function(){
         clearInterval(loadiv);
         $(`a[href='${to}.html']`)[0].click();
-    }, 1200);
+    }, default_time);
 });
 
 

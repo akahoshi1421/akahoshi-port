@@ -33,7 +33,7 @@ body{
 
     .line{
         position: fixed;
-        @for $i from 0 to 30 {
+        @for $i from 0 to 60 {
             &:nth-child(#{$i}){
                 right: calc(#{$i}px * 60 - 160px);
             }
