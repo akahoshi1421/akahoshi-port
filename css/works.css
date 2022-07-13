@@ -150,7 +150,7 @@ h1 .chapter .chapter-start {
 .main .works-container .works-discription {
   width: 95vw;
   max-width: 400px;
-  height: 450px;
+  height: 35rem;
   background-color: purple;
   color: purple;
   position: relative;
@@ -202,6 +202,10 @@ h1 .chapter .chapter-start {
           transform: translate(-50%, -10%);
   width: 80%;
   font-size: 130%;
+}
+
+.main .works-container .works-discription .works-discription-mask .works-content p {
+  line-height: 2rem;
 }
 
 .main .works-container .works-discription .works-discription-mask img {

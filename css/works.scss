@@ -131,7 +131,7 @@ h1{
         .works-discription{
             width: 95vw;
             max-width: 400px;
-            height: 450px;
+            height: 35rem;
             background-color: $mypurple;
             color: $mypurple;
             position: relative;
@@ -175,6 +175,10 @@ h1{
                     transform: translate(-50%, -10%);
                     width: 80%;
                     font-size: 130%;
+
+                    p{
+                        line-height: 2rem;
+                    }
                 }
                 img{
                     position: absolute;
