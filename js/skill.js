@@ -8,7 +8,7 @@ const SKILLDISCRIPT = [
         },
         {
             title: "JavaScript",
-            discript: "大学で学びました。jQueryも使えます。最近大学のオンライン教育システムに様々な機能を追加するWEBサイトのChrome拡張機能を作成し、200名を超えるユーザが利用していることを確認しています。(ChromeWebStoreより)"
+            discript: "大学で学びました。jQueryも使えます。最近大学のオンライン教育システムに様々な機能を追加するWEBサイトのChrome拡張機能を作成し、350名を超えるユーザが利用していることを確認しています。(ChromeWebStoreより)"
         },
         {
             title: "HTML+CSS",
