@@ -43,7 +43,7 @@ $(document).on("ready", function(){
 
 
 
-history.pushState(null, null, location.href);
+// history.pushState(null, null, location.href);
 window.addEventListener('popstate', (e) => {
   setTimeout(() => {
     window.location.reload()
