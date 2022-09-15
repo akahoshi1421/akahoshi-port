@@ -1,3 +1,5 @@
+$myred: rgb(245, 16, 16);
+
 *{
     padding: 0;
     margin: 0;
@@ -32,12 +34,12 @@ body{
         p{
             transform: translateY(50%);
             font-size: unquote("min(6.5vw, 70px)");
-            color: red;
+            color: $myred;
 
             &:nth-child(2){
                 font-size: 2.5vw;
                 transform: translateY(200%);
-                border: red 2px solid;
+                border: $myred 2px solid;
                 border-radius: 3px;
             }
         }
@@ -48,7 +50,7 @@ body{
         position: absolute;
         width: 100%;
         height: 2vh;
-        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 2px, red 2px, red 4px);
+        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 2px, $myred 2px, $myred 4px);
         top: 10%;
         left: 0;
         z-index: 2;
@@ -60,7 +62,7 @@ body{
         position: absolute;
         width: 100%;
         height: 2vh;
-        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 2px, red 2px, red 4px);
+        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 2px, $myred 2px, $myred 4px);
         bottom: 10%;
         left: 0;
         z-index: 2;

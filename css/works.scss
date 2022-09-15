@@ -1,4 +1,4 @@
-$mypurple: purple;
+$mypurple: rgb(206, 34, 206);
 
 h1{
     position: fixed;
@@ -131,7 +131,7 @@ h1{
         .works-discription{
             width: 95vw;
             max-width: 400px;
-            height: 35rem;
+            height: 40rem;
             background-color: $mypurple;
             color: $mypurple;
             position: relative;
@@ -168,9 +168,33 @@ h1{
                         background-color: $mypurple;
                     }
                 }
+                .tags{
+                    display: flex;
+                    justify-content: left;
+                    flex-wrap: wrap;
+                    position: absolute;
+                    top: 10%;
+                    left: 5%;
+                    font-size: 105%;
+                    width: 80%;
+                    .one-tag{
+                        padding: 0.3rem 0.5rem;
+                        margin: 2px;
+                        border: $mypurple 1px solid;
+                        border-radius: 0.5rem;
+                        min-width: 25%;
+                        &:hover, &.tag-active{
+                            background-color: $mypurple;
+                            border-color: black;
+                            color: black;
+                            transition: all 0.5s ease;
+                            cursor: pointer;
+                        }
+                    }
+                }
                 .works-content{
                     position: absolute;
-                    top: 20%;
+                    top: 23%;
                     left: 50%;
                     transform: translate(-50%, -10%);
                     width: 80%;

@@ -44,8 +44,8 @@ h1 .beside {
 .main .alert-line {
   width: 100%;
   height: 4vw;
-  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, yellow 6px, yellow 12px);
-  border: 2px solid yellow;
+  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #eaf516 6px, #eaf516 12px);
+  border: 2px solid #eaf516;
 }
 
 .main .title {
@@ -54,7 +54,7 @@ h1 .beside {
   left: 2%;
   width: 70%;
   height: 10%;
-  background-color: yellow;
+  background-color: #eaf516;
 }
 
 .main .title::after {
@@ -93,7 +93,7 @@ h1 .beside {
   height: 9vh;
   min-height: 90px;
   width: 35%;
-  background-color: yellow;
+  background-color: #eaf516;
   -webkit-clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
           clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
 }
@@ -109,7 +109,7 @@ h1 .beside {
   background-color: black;
   -webkit-clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
           clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
-  color: yellow;
+  color: #eaf516;
   text-align: center;
 }
 
@@ -139,7 +139,7 @@ h1 .beside {
   right: -5.5%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: yellow;
+  background-color: #eaf516;
   z-index: 5;
 }
 
@@ -149,9 +149,9 @@ h1 .beside {
   width: 100%;
   height: 50vw;
   min-height: 83vh;
-  border: 2px solid yellow;
+  border: 2px solid #eaf516;
   border-radius: 10px;
-  color: yellow;
+  color: #eaf516;
   text-align: center;
 }
 
@@ -183,7 +183,7 @@ h1 .beside {
   position: absolute;
   width: 100%;
   height: 7%;
-  background-color: yellow;
+  background-color: #eaf516;
   top: -12%;
   left: 0;
   max-height: 3vw;
@@ -194,7 +194,7 @@ h1 .beside {
   position: absolute;
   width: 100%;
   height: 7%;
-  background-color: yellow;
+  background-color: #eaf516;
   bottom: -12%;
   left: 0;
   max-height: 3vw;
@@ -211,7 +211,7 @@ h1 .beside {
   height: 11%;
   min-height: 100px;
   width: 15%;
-  background-color: yellow;
+  background-color: #eaf516;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   z-index: 10;
@@ -231,7 +231,7 @@ h1 .beside {
   background-color: black;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-  color: yellow;
+  color: #eaf516;
 }
 
 .index .index-inside .ja {
@@ -263,7 +263,7 @@ h1 .beside {
 }
 
 .index:hover .index-inside {
-  background-color: yellow;
+  background-color: #eaf516;
   color: black;
 }
 
@@ -291,6 +291,6 @@ h1 .beside {
 }
 
 .loader2 .title {
-  background-color: yellow !important;
+  background-color: #eaf516 !important;
 }
 /*# sourceMappingURL=about.css.map */

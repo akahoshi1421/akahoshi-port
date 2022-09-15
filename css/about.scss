@@ -1,3 +1,5 @@
+$myYellow: #eaf516;
+
 h1{
     position: fixed;
     color: white;
@@ -42,8 +44,8 @@ h1{
     .alert-line{
         width: 100%;
         height: 4vw;
-        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 6px, yellow 6px, yellow 12px);
-        border: 2px solid yellow;    
+        background: repeating-linear-gradient(-45deg , transparent 0px, transparent 6px, $myYellow 6px, $myYellow 12px);
+        border: 2px solid $myYellow;    
     }
     
     .title{
@@ -52,7 +54,7 @@ h1{
         left: 2%;
         width: 70%;
         height: 10%;
-        background-color: yellow;
+        background-color: $myYellow;
 
         &::after{
             content: "";
@@ -86,7 +88,7 @@ h1{
             height: 9vh;
             min-height: 90px;
             width: 35%;
-            background-color: yellow;
+            background-color: $myYellow;
             clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
 
             .name-inside{
@@ -98,7 +100,7 @@ h1{
                 transform: translate(-50%, -50%);
                 background-color: black;
                 clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
-                color: yellow;
+                color: $myYellow;
                 text-align: center;
 
                 h2{
@@ -128,7 +130,7 @@ h1{
             top: 50%;
             right: -5.5%;
             transform: translateY(-50%);
-            background-color: yellow;
+            background-color: $myYellow;
             z-index: 5;
         }
 
@@ -138,9 +140,9 @@ h1{
             width: 100%;
             height: 50vw;
             min-height: 83vh;
-            border: 2px solid yellow;
+            border: 2px solid $myYellow;
             border-radius: 10px;
-            color: yellow;
+            color: $myYellow;
             text-align: center;
 
             .explanation{
@@ -168,7 +170,7 @@ h1{
                     position: absolute;
                     width: 100%;
                     height: 7%;
-                    background-color: yellow;
+                    background-color: $myYellow;
                     top: -12%;
                     left: 0;
                     max-height: 3vw;
@@ -179,7 +181,7 @@ h1{
                     position: absolute;
                     width: 100%;
                     height: 7%;
-                    background-color: yellow;
+                    background-color: $myYellow;
                     bottom: -12%;
                     left: 0;
                     max-height: 3vw;
@@ -200,7 +202,7 @@ h1{
     height: 11%;
     min-height: 100px;
     width: 15%;
-    background-color: yellow;
+    background-color: $myYellow;
     clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
     z-index: 10;
 
@@ -216,7 +218,7 @@ h1{
         transform: translate(-50%, -50%);
         background-color: black;
         clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-        color: yellow;
+        color: $myYellow;
 
 
         .ja{
@@ -245,7 +247,7 @@ h1{
     &:hover{
         background-color: black;
         .index-inside{
-            background-color: yellow;
+            background-color: $myYellow;
             color: black;
         }
     }
@@ -268,6 +270,6 @@ h1{
 //loadについてのもの
 .loader2{
     .title{
-        background-color: yellow !important;
+        background-color: $myYellow !important;
     }
 }

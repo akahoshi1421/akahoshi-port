@@ -52,7 +52,7 @@
           transform: translate(-50%, -50%);
   width: 98%;
   height: 97%;
-  background-color: red;
+  background-color: #f51010;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   color: black;
@@ -99,7 +99,7 @@
   height: 31vw;
   max-width: 400px;
   max-height: 400px;
-  background-color: red;
+  background-color: #f51010;
   top: 26%;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -116,7 +116,7 @@
   background-color: black;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  color: red;
+  color: #f51010;
 }
 
 .container .info .info-inside .ja {
@@ -152,7 +152,7 @@
           transform: translateX(-50%);
   height: 5px;
   width: 40%;
-  background-color: red;
+  background-color: #f51010;
 }
 
 .container .info .info-inside::after {
@@ -164,7 +164,7 @@
 }
 
 .container .info:hover .info-inside {
-  background-color: red;
+  background-color: #f51010;
   color: black;
 }
 
@@ -186,7 +186,7 @@
   width: 24%;
   height: 35%;
   min-height: 180px;
-  background-color: red;
+  background-color: #f51010;
 }
 
 .container .info2 .info2-inside {
@@ -198,7 +198,7 @@
   width: 96%;
   height: 96%;
   background-color: black;
-  color: red;
+  color: #f51010;
 }
 
 .container .info2 .info2-inside .ja {
@@ -224,7 +224,7 @@
 }
 
 .container .info2:hover .info2-inside {
-  background-color: red;
+  background-color: #f51010;
   color: black;
 }
 

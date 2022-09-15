@@ -66,8 +66,8 @@ h1 .chapter .chapter-start {
 .main .alert-line {
   width: 100%;
   height: 4vw;
-  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, purple 6px, purple 12px);
-  border: 2px solid purple;
+  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #ce22ce 6px, #ce22ce 12px);
+  border: 2px solid #ce22ce;
 }
 
 .main .title {
@@ -76,7 +76,7 @@ h1 .chapter .chapter-start {
   width: 70%;
   height: 12vw;
   position: relative;
-  background-color: purple;
+  background-color: #ce22ce;
 }
 
 .main .title::after {
@@ -115,7 +115,7 @@ h1 .chapter .chapter-start {
 .main .img-discript .img-discript-container {
   width: 85%;
   height: 10vw;
-  color: purple;
+  color: #ce22ce;
   text-align: center;
 }
 
@@ -128,7 +128,7 @@ h1 .chapter .chapter-start {
   position: absolute;
   height: 2px;
   width: 100%;
-  background-color: purple;
+  background-color: #ce22ce;
   top: 125%;
   left: 0;
 }
@@ -150,9 +150,9 @@ h1 .chapter .chapter-start {
 .main .works-container .works-discription {
   width: 95vw;
   max-width: 400px;
-  height: 35rem;
-  background-color: purple;
-  color: purple;
+  height: 40rem;
+  background-color: #ce22ce;
+  color: #ce22ce;
   position: relative;
   -webkit-clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
@@ -177,7 +177,7 @@ h1 .chapter .chapter-start {
   position: absolute;
   top: 3%;
   left: 13%;
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #ce22ce;
 }
 
 .main .works-container .works-discription .works-discription-mask .works-title h3 {
@@ -191,12 +191,45 @@ h1 .chapter .chapter-start {
   left: -15px;
   width: 10px;
   height: 100%;
-  background-color: purple;
+  background-color: #ce22ce;
+}
+
+.main .works-container .works-discription .works-discription-mask .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 105%;
+  width: 80%;
+}
+
+.main .works-container .works-discription .works-discription-mask .tags .one-tag {
+  padding: 0.3rem 0.5rem;
+  margin: 2px;
+  border: #ce22ce 1px solid;
+  border-radius: 0.5rem;
+  min-width: 25%;
+}
+
+.main .works-container .works-discription .works-discription-mask .tags .one-tag:hover, .main .works-container .works-discription .works-discription-mask .tags .one-tag.tag-active {
+  background-color: #ce22ce;
+  border-color: black;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .main .works-container .works-discription .works-discription-mask .works-content {
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 50%;
   -webkit-transform: translate(-50%, -10%);
           transform: translate(-50%, -10%);
@@ -284,7 +317,7 @@ h1 .chapter .chapter-start {
   height: 11%;
   min-height: 100px;
   width: 15%;
-  background-color: purple;
+  background-color: #ce22ce;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   z-index: 10;
@@ -304,7 +337,7 @@ h1 .chapter .chapter-start {
   background-color: black;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-  color: purple;
+  color: #ce22ce;
 }
 
 .index .index-inside .ja {
@@ -336,7 +369,7 @@ h1 .chapter .chapter-start {
 }
 
 .index:hover .index-inside {
-  background-color: purple;
+  background-color: #ce22ce;
   color: black;
 }
 
@@ -346,6 +379,6 @@ h1 .chapter .chapter-start {
 }
 
 .loader2 .title {
-  background-color: purple !important;
+  background-color: #ce22ce !important;
 }
 /*# sourceMappingURL=works.css.map */

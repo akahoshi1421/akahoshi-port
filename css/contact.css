@@ -33,8 +33,8 @@ h1 span.title {
 .main .alert-line {
   width: 100%;
   height: 4vw;
-  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #7777fc 6px, #7777fc 12px);
-  border: 2px solid #7777fc;
+  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #1d1de3 6px, #1d1de3 12px);
+  border: 2px solid #1d1de3;
 }
 
 .main .title {
@@ -43,7 +43,7 @@ h1 span.title {
   left: 2%;
   width: 70%;
   height: 10%;
-  background-color: #7777fc;
+  background-color: #1d1de3;
 }
 
 .main .title::after {
@@ -90,7 +90,7 @@ h1 span.title {
   height: 50%;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: #7777fc;
+  background-color: #1d1de3;
   z-index: 3;
 }
 
@@ -106,7 +106,7 @@ h1 span.title {
           transform: translateX(-50%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
           clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 25% 100%, 0 75%);
-  background-color: #7777fc;
+  background-color: #1d1de3;
   z-index: 4;
   cursor: pointer;
 }
@@ -121,7 +121,7 @@ h1 span.title {
 }
 
 .main .intro .github:hover .inside {
-  background-color: #7777fc;
+  background-color: #1d1de3;
   color: black;
 }
 
@@ -135,7 +135,7 @@ h1 span.title {
   bottom: 0;
   -webkit-clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
-  background-color: #7777fc;
+  background-color: #1d1de3;
   z-index: 4;
   cursor: pointer;
 }
@@ -150,7 +150,7 @@ h1 span.title {
 }
 
 .main .intro .qiita:hover .inside {
-  background-color: #7777fc;
+  background-color: #1d1de3;
   color: black;
 }
 
@@ -164,7 +164,7 @@ h1 span.title {
   bottom: 0;
   -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
           clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
-  background-color: #7777fc;
+  background-color: #1d1de3;
   z-index: 4;
   cursor: pointer;
 }
@@ -179,7 +179,7 @@ h1 span.title {
 }
 
 .main .intro .email:hover .inside {
-  background-color: #7777fc;
+  background-color: #1d1de3;
   color: black;
 }
 
@@ -193,7 +193,7 @@ h1 span.title {
   height: 95%;
   background-color: black;
   z-index: 5;
-  color: #7777fc;
+  color: #1d1de3;
 }
 
 .main .intro .inside span {
@@ -235,7 +235,7 @@ h1 span.title {
   height: 11%;
   min-height: 100px;
   width: 15%;
-  background-color: #7777fc;
+  background-color: #1d1de3;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   z-index: 10;
@@ -255,7 +255,7 @@ h1 span.title {
   background-color: black;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-  color: #7777fc;
+  color: #1d1de3;
 }
 
 .index .index-inside .ja {
@@ -287,7 +287,7 @@ h1 span.title {
 }
 
 .index:hover .index-inside {
-  background-color: #7777fc;
+  background-color: #1d1de3;
   color: black;
 }
 
@@ -297,6 +297,6 @@ h1 span.title {
 }
 
 .loader2 .title {
-  background-color: #7777fc !important;
+  background-color: #1d1de3 !important;
 }
 /*# sourceMappingURL=contact.css.map */

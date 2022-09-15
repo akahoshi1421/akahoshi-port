@@ -1,3 +1,5 @@
+$myred: rgb(245, 16, 16);
+
 @font-face {
     font-family: "port-font";
     src: url("../fonts/HGRME.TTC") format("woff");
@@ -55,7 +57,7 @@ body{
         height: 70px;
         width: 70px;
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        background-color: red;
+        background-color: $myred;
         text-align: center;
 
         p{
