@@ -1,5 +1,4 @@
 * {
-  -webkit-transition: background-color 0.6s ease, color 0.6s ease;
   transition: background-color 0.6s ease, color 0.6s ease;
 }
 
@@ -10,17 +9,14 @@
   background: url("../img/port.svg") no-repeat;
   background-position: 2px;
 }
-
 .container a {
   text-decoration: none;
 }
-
 .container .title {
   position: absolute;
   top: 5%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 55%;
   height: 40%;
   min-height: 300px;
@@ -28,59 +24,52 @@
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   /*
-        &:hover{
-            background-color: black;
-            
-            .title-inside{
-                background-color: red;
-                color: black;
-                .alert-line{
-                    border: solid black 4px;
-                    background: repeating-linear-gradient(-45deg , black 0px, black 8px, red 8px, red 16px);
-                    transform: translateX(-10px);
-                }
-            }
-        }
-        */
-}
+  &:hover{
+      background-color: black;
 
+      .title-inside{
+          background-color: red;
+          color: black;
+          .alert-line{
+              border: solid black 4px;
+              background: repeating-linear-gradient(-45deg , black 0px, black 8px, red 8px, red 16px);
+              transform: translateX(-10px);
+          }
+      }
+  }
+  */
+}
 .container .title .title-inside {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 98%;
   height: 97%;
-  background-color: #f51010;
+  background-color: rgb(245, 16, 16);
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   color: black;
   text-align: center;
 }
-
 .container .title .title-inside h1 {
   position: absolute;
   left: 50%;
   top: 15%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-size: 400%;
   letter-spacing: -2px;
 }
-
 .container .title .title-inside h2 {
   position: absolute;
   left: 50%;
   top: 60%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   white-space: nowrap;
   font-size: 1.5rem;
   letter-spacing: -1px;
   font-weight: 100;
 }
-
 .container .title .title-inside .alert-line {
   position: absolute;
   top: 80%;
@@ -88,119 +77,99 @@
   height: 20%;
   width: 100%;
   border: solid black 4px;
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   background: repeating-linear-gradient(-45deg, transparent 0px, transparent 8px, black 8px, black 16px);
 }
-
 .container .info {
   position: absolute;
   width: 30vw;
   height: 31vw;
   max-width: 400px;
   max-height: 400px;
-  background-color: #f51010;
+  background-color: rgb(245, 16, 16);
   top: 26%;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
-
 .container .info .info-inside {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 96%;
   height: 97%;
   background-color: black;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  color: #f51010;
+  color: rgb(245, 16, 16);
 }
-
 .container .info .info-inside .ja {
   position: absolute;
   left: 50%;
   top: 25%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   white-space: nowrap;
   font-size: 2.2rem;
   letter-spacing: -1px;
   font-weight: 100;
 }
-
 .container .info .info-inside .en {
   position: absolute;
   left: 50%;
   top: 55%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   white-space: nowrap;
   font-size: 1.2rem;
   letter-spacing: -1px;
   font-weight: 100;
 }
-
 .container .info .info-inside::before, .container .info .info-inside::after {
   content: "";
   position: absolute;
   top: 15%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   height: 5px;
   width: 40%;
-  background-color: #f51010;
+  background-color: rgb(245, 16, 16);
 }
-
 .container .info .info-inside::after {
   top: 75%;
 }
-
 .container .info:hover {
   background-color: black;
 }
-
 .container .info:hover .info-inside {
-  background-color: #f51010;
+  background-color: rgb(245, 16, 16);
   color: black;
 }
-
 .container .info:hover .info-inside::before, .container .info:hover .info-inside::after {
   background-color: black;
 }
-
 .container .about {
   left: -3%;
 }
-
 .container .contact {
   right: -3%;
 }
-
 .container .info2 {
   position: absolute;
   top: 48vh;
   width: 24%;
   height: 35%;
   min-height: 180px;
-  background-color: #f51010;
+  background-color: rgb(245, 16, 16);
 }
-
 .container .info2 .info2-inside {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 96%;
   height: 96%;
   background-color: black;
-  color: #f51010;
+  color: rgb(245, 16, 16);
 }
-
 .container .info2 .info2-inside .ja {
   position: absolute;
   top: 25%;
@@ -209,7 +178,6 @@
   letter-spacing: -1px;
   font-weight: 100;
 }
-
 .container .info2 .info2-inside .en {
   position: absolute;
   top: 55%;
@@ -218,60 +186,46 @@
   letter-spacing: -1px;
   font-weight: 100;
 }
-
 .container .info2:hover {
   background-color: black;
 }
-
 .container .info2:hover .info2-inside {
-  background-color: #f51010;
+  background-color: rgb(245, 16, 16);
   color: black;
 }
-
 .container .works {
   left: 25%;
   -webkit-clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
 }
-
 .container .works .info2-inside {
   -webkit-clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0% 50%);
 }
-
 .container .works .info2-inside .ja {
   left: 50%;
-  -webkit-transform: translateX(-30%);
-          transform: translateX(-30%);
+  transform: translateX(-30%);
 }
-
 .container .works .info2-inside .en {
   left: 50%;
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  transform: translateX(-20%);
 }
-
 .container .skills {
   right: 25%;
   -webkit-clip-path: polygon(0% 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
           clip-path: polygon(0% 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
 }
-
 .container .skills .info2-inside {
   -webkit-clip-path: polygon(0% 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
           clip-path: polygon(0% 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
 }
-
 .container .skills .info2-inside .ja {
   left: 50%;
-  -webkit-transform: translateX(-60%);
-          transform: translateX(-60%);
+  transform: translateX(-60%);
 }
-
 .container .skills .info2-inside .en {
   left: 50%;
-  -webkit-transform: translateX(-60%);
-          transform: translateX(-60%);
+  transform: translateX(-60%);
 }
 
 .cannotsee {
@@ -304,7 +258,6 @@
     opacity: 1;
   }
 }
-
 @media screen and (max-width: 500px) {
   .info2 {
     height: 25% !important;
@@ -316,13 +269,11 @@
     font-size: 1rem !important;
   }
 }
-
 @media screen and (max-width: 930px) {
   h1 {
     font-size: 300% !important;
   }
 }
-
 @media screen and (max-width: 570pt) {
   .info2 {
     width: 45% !important;
@@ -348,23 +299,19 @@
     top: 60% !important;
   }
 }
-
 @media screen and (max-width: 770pt) and (max-height: 850px) {
   .info2 {
     bottom: 2% !important;
     top: auto !important;
   }
 }
-
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 200% !important;
   }
 }
-
 @media screen and (max-height: 700px) {
   .info2 {
     top: max(65vh, 350px)  !important;
   }
-}
-/*# sourceMappingURL=index-container.css.map */
+}/*# sourceMappingURL=index-container.css.map */

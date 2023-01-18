@@ -7,22 +7,18 @@ h1 {
   min-height: 980px;
   z-index: -1;
 }
-
 h1 .chapter {
   position: fixed;
   top: 2.5vw;
 }
-
 h1 .vertical {
   position: fixed;
   right: calc(46% + 9vw);
   top: 2vw;
   font-size: 9vw;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
-
 h1 .beside {
   position: fixed;
   top: 29vw;
@@ -40,14 +36,12 @@ h1 .beside {
   top: max(40vw, 30vh);
   overflow: hidden;
 }
-
 .main .alert-line {
   width: 100%;
   height: 4vw;
   background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #eaf516 6px, #eaf516 12px);
   border: 2px solid #eaf516;
 }
-
 .main .title {
   position: absolute;
   top: 10vw;
@@ -56,7 +50,6 @@ h1 .beside {
   height: 10%;
   background-color: #eaf516;
 }
-
 .main .title::after {
   content: "";
   position: absolute;
@@ -65,29 +58,23 @@ h1 .beside {
   background-color: black;
   top: 50%;
   right: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
           clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
-
 .main .title .ja {
   font-size: min(5vw, 60px);
 }
-
 .main .title .en {
   font-size: min(3vw, 30px);
 }
-
 .main .intro {
   position: absolute;
   top: 22%;
   width: 90vw;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 .main .intro .name {
   position: relative;
   height: 9vh;
@@ -97,52 +84,43 @@ h1 .beside {
   -webkit-clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
           clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
 }
-
 .main .intro .name .name-inside {
   position: absolute;
   height: 95%;
   width: 98%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: black;
   -webkit-clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
           clip-path: polygon(0 0, 85% 0%, 100% 50%, 85% 100%, 0 100%, 0% 50%);
   color: #eaf516;
   text-align: center;
 }
-
 .main .intro .name .name-inside h2 {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   white-space: nowrap;
 }
-
 .main .intro .name .name-inside .ja {
   top: 10%;
   font-size: min(3.5vw, 40px);
 }
-
 .main .intro .name .name-inside .en {
   top: 60%;
   font-size: min(2vw, 20px);
 }
-
 .main .intro .line {
   position: absolute;
   width: 71%;
   height: 2px;
   top: 50%;
   right: -5.5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: #eaf516;
   z-index: 5;
 }
-
 .main .intro .name-container {
   position: absolute;
   top: 180%;
@@ -154,30 +132,25 @@ h1 .beside {
   color: #eaf516;
   text-align: center;
 }
-
 .main .intro .name-container .explanation {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 70%;
   width: 70%;
   letter-spacing: 1px;
 }
-
 .main .intro .name-container .explanation p {
   font-size: min(3vw, 30px);
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   line-height: 3.5vw;
 }
-
 .main .intro .name-container .explanation::before {
   content: "";
   position: absolute;
@@ -188,7 +161,6 @@ h1 .beside {
   left: 0;
   max-height: 3vw;
 }
-
 .main .intro .name-container .explanation::after {
   content: "";
   position: absolute;
@@ -216,52 +188,43 @@ h1 .beside {
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   z-index: 10;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .index .index-inside {
   position: absolute;
   height: 95%;
   width: 97%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: black;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   color: #eaf516;
 }
-
 .index .index-inside .ja {
   position: absolute;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 11;
   font-size: min(4vw, 40px);
   font-weight: 600;
   white-space: nowrap;
 }
-
 .index .index-inside .en {
   position: absolute;
   top: 65%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 11;
   font-size: min(2vw, 20px);
   font-weight: 600;
   white-space: nowrap;
 }
-
 .index:hover {
   background-color: black;
 }
-
 .index:hover .index-inside {
   background-color: #eaf516;
   color: black;
@@ -289,8 +252,6 @@ h1 .beside {
     opacity: 1;
   }
 }
-
 .loader2 .title {
   background-color: #eaf516 !important;
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

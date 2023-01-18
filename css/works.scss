@@ -215,7 +215,7 @@ h1{
 
                     &:hover{
                         transform-origin: center center;
-                        transform: scale(1.2) translate(-45%, 2%);
+                        transform: scale(1.2) translate(-42%, 2%);
                         
                     }
 
@@ -263,6 +263,15 @@ h1{
                         width: 57%;
                         bottom: 7%;
                         cursor: pointer;
+                    }
+
+                    &.anya-css{
+                        width: 77%;
+                        cursor: pointer;
+                    }
+
+                    &.rist{
+                        width: 78%;
                     }
                 }
             }

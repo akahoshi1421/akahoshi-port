@@ -7,22 +7,18 @@ h1 {
   min-height: 970px;
   z-index: -1;
 }
-
 h1 .vertical {
   position: fixed;
   right: 25%;
   font-size: 7vw;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
-
 h1 .title-start {
   position: fixed;
   font-size: 7vw;
   right: calc(25% + 7vw);
 }
-
 h1 .chapter {
   position: fixed;
   top: 18vw;
@@ -37,107 +33,87 @@ h1 .chapter {
   overflow: hidden;
   position: relative;
 }
-
 .main .alert-line {
   width: 100%;
   height: 4vw;
-  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, #5bf95b 6px, #5bf95b 12px);
-  border: 2px solid #5bf95b;
+  background: repeating-linear-gradient(-45deg, transparent 0px, transparent 6px, rgb(91, 249, 91) 6px, rgb(91, 249, 91) 12px);
+  border: 2px solid rgb(91, 249, 91);
 }
-
 .main .skills-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   overflow: visible;
   width: 100%;
 }
-
 .main .skills-container .myskill {
   margin-top: 5vw;
   width: 95vw;
   height: 95vw;
   position: relative;
 }
-
 .main .skills-container .myskill .skill-mark {
   position: absolute;
   top: 50%;
   left: -20%;
   height: 40%;
   width: 40%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #5bf95b;
+  transform: translateY(-50%);
+  background-color: rgb(91, 249, 91);
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
-
 .main .skills-container .myskill .skill-mark p {
   position: absolute;
   top: 50%;
   right: 5%;
-  -webkit-transform: translate(-4%, -50%) rotate(90deg);
-          transform: translate(-4%, -50%) rotate(90deg);
+  transform: translate(-4%, -50%) rotate(90deg);
   color: black;
   font-size: 8vw;
   letter-spacing: 0.2vw;
 }
-
 .main .skills-container .myskill .skilltp-line {
   position: absolute;
   top: 30%;
   left: 10%;
   height: 0.3%;
   width: 20%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  background-color: #5bf95b;
+  transform: rotate(-45deg);
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .skilltp-line2 {
   position: absolute;
   top: 23%;
   left: 27%;
   height: 0.3%;
   width: 15%;
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .skillmid-line {
   position: absolute;
   top: 50%;
   left: 15%;
   height: 0.3%;
   width: 27%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #5bf95b;
+  transform: translateY(-50%);
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .skillbtm-line {
   position: absolute;
   bottom: 30%;
   left: 10%;
   height: 0.3%;
   width: 20%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: #5bf95b;
+  transform: rotate(45deg);
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .skillbtm-line2 {
   position: absolute;
   bottom: 23%;
   left: 27%;
   height: 0.3%;
   width: 15%;
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .prevnext {
   position: absolute;
   left: 5%;
@@ -145,150 +121,120 @@ h1 .chapter {
   width: 20%;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
   cursor: pointer;
 }
-
 .main .skills-container .myskill .skill-prev, .main .skills-container .myskill .skill-next {
   position: absolute;
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-
 .main .skills-container .myskill .skill-prev-mask, .main .skills-container .myskill .skill-next-mask {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 98%;
   width: 98.5%;
   background-color: black;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
 }
-
 .main .skills-container .myskill .skill-prev-mask p, .main .skills-container .myskill .skill-next-mask p {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #5bf95b;
+  transform: translate(-50%, -50%);
+  color: rgb(91, 249, 91);
   font-size: 4.5vw;
 }
-
 .main .skills-container .myskill .skill-prev:hover, .main .skills-container .myskill .skill-next:hover {
   background-color: black;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 .main .skills-container .myskill .skill-prev:hover .skill-prev-mask, .main .skills-container .myskill .skill-prev:hover .skill-next-mask, .main .skills-container .myskill .skill-next:hover .skill-prev-mask, .main .skills-container .myskill .skill-next:hover .skill-next-mask {
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .skill-prev:hover .skill-prev-mask p, .main .skills-container .myskill .skill-prev:hover .skill-next-mask p, .main .skills-container .myskill .skill-next:hover .skill-prev-mask p, .main .skills-container .myskill .skill-next:hover .skill-next-mask p {
   color: black;
 }
-
 .main .skills-container .myskill .skill-prev {
   top: 15%;
 }
-
 .main .skills-container .myskill .skill-next {
   bottom: 15%;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript {
   position: absolute;
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   height: 22%;
   width: 59%;
   left: 41%;
   cursor: pointer;
-  -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript-mask {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 99%;
   height: 98%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   background-color: black;
   text-align: center;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript-mask .title {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #5bf95b;
+  transform: translate(-50%, -50%);
+  color: rgb(91, 249, 91);
   font-size: 7.5vw;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript-mask .discript {
   position: absolute;
-  color: #5bf95b;
+  color: rgb(91, 249, 91);
   font-size: 4vw;
   overflow-wrap: break-word;
   word-break: keep-all;
   display: none;
   line-height: 5.5vw;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript:hover {
   background-color: black;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript:hover .myskill-discript-mask {
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript:hover .myskill-discript-mask p {
   color: black;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript.big {
   position: absolute;
   top: 50% !important;
   left: 50% !important;
-  -webkit-transform: translate(-50%, -50%) !important;
-          transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
   width: 85%;
   height: 85%;
   z-index: 2;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript.big .title {
   top: 10%;
 }
-
 .main .skills-container .myskill .discription-container .myskill-discript.big .discript {
   display: block;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 85%;
 }
-
 .main .skills-container .myskill .discription-container .tpskill {
   top: 15.6%;
-  -webkit-transform: translateY(-15.6%);
-          transform: translateY(-15.6%);
+  transform: translateY(-15.6%);
 }
-
 .main .skills-container .myskill .discription-container .tpskill.prev {
   opacity: 0;
   -webkit-animation: upanime1 0.3s ease forwards;
@@ -296,19 +242,15 @@ h1 .chapter {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
-
 .main .skills-container .myskill .discription-container .tpskill.next {
   opacity: 0;
   -webkit-animation: downanime1 0.3s ease forwards;
           animation: downanime1 0.3s ease forwards;
 }
-
 .main .skills-container .myskill .discription-container .midskill {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .main .skills-container .myskill .discription-container .midskill.prev {
   opacity: 0;
   -webkit-animation: upanime2 0.3s ease forwards;
@@ -316,7 +258,6 @@ h1 .chapter {
   -webkit-animation-delay: 0.05s;
           animation-delay: 0.05s;
 }
-
 .main .skills-container .myskill .discription-container .midskill.next {
   opacity: 0;
   -webkit-animation: downanime2 0.3s ease forwards;
@@ -324,19 +265,15 @@ h1 .chapter {
   -webkit-animation-delay: 0.05s;
           animation-delay: 0.05s;
 }
-
 .main .skills-container .myskill .discription-container .btmskill {
   bottom: 15.6%;
-  -webkit-transform: translateY(15.6%);
-          transform: translateY(15.6%);
+  transform: translateY(15.6%);
 }
-
 .main .skills-container .myskill .discription-container .btmskill.prev {
   opacity: 0;
   -webkit-animation: upanime3 0.3s ease forwards;
           animation: upanime3 0.3s ease forwards;
 }
-
 .main .skills-container .myskill .discription-container .btmskill.next {
   opacity: 0;
   -webkit-animation: downanime3 0.3s ease forwards;
@@ -348,159 +285,124 @@ h1 .chapter {
 @-webkit-keyframes upanime1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-31.2%);
-            transform: translateY(-31.2%);
+    transform: translateY(-31.2%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-15.6%);
-            transform: translateY(-15.6%);
+    transform: translateY(-15.6%);
   }
 }
 
 @keyframes upanime1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-31.2%);
-            transform: translateY(-31.2%);
+    transform: translateY(-31.2%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-15.6%);
-            transform: translateY(-15.6%);
+    transform: translateY(-15.6%);
   }
 }
-
 @-webkit-keyframes upanime2 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-65.6%);
-            transform: translateY(-65.6%);
+    transform: translateY(-65.6%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
-
 @keyframes upanime2 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-65.6%);
-            transform: translateY(-65.6%);
+    transform: translateY(-65.6%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
-
 @-webkit-keyframes upanime3 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(15.6%);
-            transform: translateY(15.6%);
+    transform: translateY(15.6%);
   }
 }
-
 @keyframes upanime3 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(15.6%);
-            transform: translateY(15.6%);
+    transform: translateY(15.6%);
   }
 }
-
 @-webkit-keyframes downanime1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-15.6%);
-            transform: translateY(-15.6%);
+    transform: translateY(-15.6%);
   }
 }
-
 @keyframes downanime1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-15.6%);
-            transform: translateY(-15.6%);
+    transform: translateY(-15.6%);
   }
 }
-
 @-webkit-keyframes downanime2 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-34.4%);
-            transform: translateY(-34.4%);
+    transform: translateY(-34.4%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
-
 @keyframes downanime2 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-34.4%);
-            transform: translateY(-34.4%);
+    transform: translateY(-34.4%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
-
 @-webkit-keyframes downanime3 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(31.2%);
-            transform: translateY(31.2%);
+    transform: translateY(31.2%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(15.6%);
-            transform: translateY(15.6%);
+    transform: translateY(15.6%);
   }
 }
-
 @keyframes downanime3 {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(31.2%);
-            transform: translateY(31.2%);
+    transform: translateY(31.2%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(15.6%);
-            transform: translateY(15.6%);
+    transform: translateY(15.6%);
   }
 }
-
 .cannotsee {
   display: none;
 }
@@ -512,59 +414,50 @@ h1 .chapter {
   height: 11%;
   min-height: 100px;
   width: 15%;
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
   z-index: 10;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .index .index-inside {
   position: absolute;
   height: 95%;
   width: 97%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: black;
   -webkit-clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
           clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0% 50%);
-  color: #5bf95b;
+  color: rgb(91, 249, 91);
 }
-
 .index .index-inside .ja {
   position: absolute;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 11;
   font-size: min(4vw, 40px);
   font-weight: 600;
   white-space: nowrap;
 }
-
 .index .index-inside .en {
   position: absolute;
   top: 65%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 11;
   font-size: min(2vw, 20px);
   font-weight: 600;
   white-space: nowrap;
 }
-
 .index:hover {
   background-color: black;
 }
-
 .index:hover .index-inside {
-  background-color: #5bf95b;
+  background-color: rgb(91, 249, 91);
   color: black;
 }
 
@@ -574,6 +467,5 @@ h1 .chapter {
 }
 
 .loader2 .title {
-  background-color: #5bf95b !important;
-}
-/*# sourceMappingURL=skills.css.map */
+  background-color: rgb(91, 249, 91) !important;
+}/*# sourceMappingURL=skills.css.map */
