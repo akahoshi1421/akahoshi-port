@@ -42,6 +42,20 @@ const SKILLDISCRIPT = [
             title: "Ruby on Rails",
             discript: "独学で学びました。Django以外のWebアプリケーション・フレームワークがどのようになっているのかを知るために学習をしました。"
         }
+    ],
+    [
+        {
+            title: "React",
+            discript: "独学で学びました。このサイトは学習前に作ったものなので生のHTMLですが、最近開発を行う時は大体Reactを使っています。"
+        },
+        {
+            title: "Java",
+            discript: "大学で学びました。軽くではありますが講義でこれを利用してAndroid開発を行ったことがあります。"
+        },
+        {
+            title: "Swift",
+            discript: "アルバイト先で必要だったので勉強しました。アルバイト先でiOS開発を小中学生に教えています。"
+        }
     ]
 ];
 
@@ -51,7 +65,7 @@ $(document).on("click", ".prevnext", function(){
     let which = "";
     if($(this).attr("which") == "prev"){
         skillCnt--;
-        if(skillCnt == -1) skillCnt = 2; 
+        if(skillCnt == -1) skillCnt = SKILLDISCRIPT.length - 1; 
         which = "prev";
     }
     else{
@@ -62,7 +76,7 @@ $(document).on("click", ".prevnext", function(){
     $(".discription-container").empty().append(INSERTHTML);
 
     for(let i = 0; i < 3; i++){
-        let txt = SKILLDISCRIPT[skillCnt % 3][i];
+        let txt = SKILLDISCRIPT[skillCnt % SKILLDISCRIPT.length][i];
         $(`.myskill-discript[cnt=${i + 1}] .title`).text(txt.title);
         $(`.myskill-discript[cnt=${i + 1}] .discript`).text(txt.discript);
     }
