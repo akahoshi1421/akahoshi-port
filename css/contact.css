@@ -244,8 +244,7 @@ h1 span.title {
 }
 
 .fadeIn {
-  -webkit-animation: fade forwards 2s;
-          animation: fade forwards 2s;
+  animation: fade forwards 2s;
 }
 
 .loader2 .title {

@@ -11,8 +11,7 @@ h1 .vertical {
   position: fixed;
   right: 25%;
   font-size: 7vw;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 h1 .title-start {
   position: fixed;
@@ -237,15 +236,12 @@ h1 .chapter {
 }
 .main .skills-container .myskill .discription-container .tpskill.prev {
   opacity: 0;
-  -webkit-animation: upanime1 0.3s ease forwards;
-          animation: upanime1 0.3s ease forwards;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation: upanime1 0.3s ease forwards;
+  animation-delay: 0.1s;
 }
 .main .skills-container .myskill .discription-container .tpskill.next {
   opacity: 0;
-  -webkit-animation: downanime1 0.3s ease forwards;
-          animation: downanime1 0.3s ease forwards;
+  animation: downanime1 0.3s ease forwards;
 }
 .main .skills-container .myskill .discription-container .midskill {
   top: 50%;
@@ -253,17 +249,13 @@ h1 .chapter {
 }
 .main .skills-container .myskill .discription-container .midskill.prev {
   opacity: 0;
-  -webkit-animation: upanime2 0.3s ease forwards;
-          animation: upanime2 0.3s ease forwards;
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  animation: upanime2 0.3s ease forwards;
+  animation-delay: 0.05s;
 }
 .main .skills-container .myskill .discription-container .midskill.next {
   opacity: 0;
-  -webkit-animation: downanime2 0.3s ease forwards;
-          animation: downanime2 0.3s ease forwards;
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  animation: downanime2 0.3s ease forwards;
+  animation-delay: 0.05s;
 }
 .main .skills-container .myskill .discription-container .btmskill {
   bottom: 15.6%;
@@ -271,26 +263,12 @@ h1 .chapter {
 }
 .main .skills-container .myskill .discription-container .btmskill.prev {
   opacity: 0;
-  -webkit-animation: upanime3 0.3s ease forwards;
-          animation: upanime3 0.3s ease forwards;
+  animation: upanime3 0.3s ease forwards;
 }
 .main .skills-container .myskill .discription-container .btmskill.next {
   opacity: 0;
-  -webkit-animation: downanime3 0.3s ease forwards;
-          animation: downanime3 0.3s ease forwards;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-@-webkit-keyframes upanime1 {
-  0% {
-    opacity: 0;
-    transform: translateY(-31.2%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-15.6%);
-  }
+  animation: downanime3 0.3s ease forwards;
+  animation-delay: 0.1s;
 }
 
 @keyframes upanime1 {
@@ -303,16 +281,6 @@ h1 .chapter {
     transform: translateY(-15.6%);
   }
 }
-@-webkit-keyframes upanime2 {
-  0% {
-    opacity: 0;
-    transform: translateY(-65.6%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
-}
 @keyframes upanime2 {
   0% {
     opacity: 0;
@@ -321,16 +289,6 @@ h1 .chapter {
   100% {
     opacity: 1;
     transform: translateY(-50%);
-  }
-}
-@-webkit-keyframes upanime3 {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(15.6%);
   }
 }
 @keyframes upanime3 {
@@ -343,16 +301,6 @@ h1 .chapter {
     transform: translateY(15.6%);
   }
 }
-@-webkit-keyframes downanime1 {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-15.6%);
-  }
-}
 @keyframes downanime1 {
   0% {
     opacity: 0;
@@ -363,16 +311,6 @@ h1 .chapter {
     transform: translateY(-15.6%);
   }
 }
-@-webkit-keyframes downanime2 {
-  0% {
-    opacity: 0;
-    transform: translateY(-34.4%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-50%);
-  }
-}
 @keyframes downanime2 {
   0% {
     opacity: 0;
@@ -381,16 +319,6 @@ h1 .chapter {
   100% {
     opacity: 1;
     transform: translateY(-50%);
-  }
-}
-@-webkit-keyframes downanime3 {
-  0% {
-    opacity: 0;
-    transform: translateY(31.2%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(15.6%);
   }
 }
 @keyframes downanime3 {
@@ -462,8 +390,7 @@ h1 .chapter {
 }
 
 .fadeIn {
-  -webkit-animation: fade forwards 2s;
-          animation: fade forwards 2s;
+  animation: fade forwards 2s;
 }
 
 .loader2 .title {

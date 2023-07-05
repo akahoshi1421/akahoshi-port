@@ -16,8 +16,7 @@ h1 .vertical {
   right: calc(46% + 9vw);
   top: 2vw;
   font-size: 9vw;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 h1 .beside {
   position: fixed;
@@ -231,17 +230,7 @@ h1 .beside {
 }
 
 .fadeIn {
-  -webkit-animation: fade forwards 2s;
-          animation: fade forwards 2s;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fade forwards 2s;
 }
 
 @keyframes fade {
