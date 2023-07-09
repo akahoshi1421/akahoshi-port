@@ -8,7 +8,7 @@ const SKILLDISCRIPT = [
         },
         {
             title: "JavaScript",
-            discript: "大学で学びました。jQueryも使えます。最近大学のオンライン教育システムに様々な機能を追加するWEBサイトのChrome拡張機能を作成し、600名を超えるユーザが利用していることを確認しています。(ChromeWebStoreより)"
+            discript: "大学で学びました。jQueryも使えます。最近大学のオンライン教育システムに様々な機能を追加するWEBサイトのChrome拡張機能を作成し、最大800名を超えるユーザが利用していることを確認しています。(ChromeWebStoreより)"
         },
         {
             title: "HTML+CSS",
@@ -55,6 +55,20 @@ const SKILLDISCRIPT = [
         {
             title: "Swift",
             discript: "アルバイト先で必要だったので勉強しました。アルバイト先でiOS開発を小中学生に教えています。"
+        }
+    ],
+    [
+        {
+            title: "TypeScript",
+            discript: "独学で学びました。アルバイト先のGoogle Apps Scriptで業務ツールを作成する業務で使用しています。また、最近はフロントの開発(Next.js)にも使用しています。"
+        },
+        {
+            title: "Next.js",
+            discript: "2023年春ごろに初めて触りました。まだ勉強中です。"
+        },
+        {
+            title: "infra",
+            discript: "バックエンドも含めたアプリケーションのデプロイができます。ConohaVPSやGCPからNginxやSupervisorを利用しDjangoアプリケーションを5度ほどデプロイしたことがあります。"
         }
     ]
 ];
